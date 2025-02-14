@@ -6,6 +6,7 @@ import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -144,6 +145,10 @@ public class ControlServiciosController {
 	    return "getallclients";
 	}
 	
+	/**
+	 * Importación de los datos a partir de una planilla excel.
+	 * @return
+	 */
 	@RequestMapping("/importarclientes")
 	public String importarClientes() {
 		System.out.println("ControlServiciosController.importarClientes ");
@@ -214,6 +219,13 @@ System.out.println("nro de tipos de servicios: "+repo.findAll().size());
 	public String exitApplication() {
 		System.exit(0);
 		return "exitApplication";
+	}
+	
+	@GetMapping("/importView")
+	public String importView() {
+		System.out.println("ControlServiciosController.importView ");
+		
+		return "import";
 	}
 
 }
