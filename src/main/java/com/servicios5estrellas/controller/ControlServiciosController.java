@@ -223,7 +223,7 @@ System.out.println("nro de tipos de servicios: "+repo.findAll().size());
 	
 	@GetMapping("/importView")
 	public String importView() {
-		System.out.println("ControlServiciosController.importView");
+		System.out.println("ControlServiciosController.importView.");
 		
 		return "import";
 	}
