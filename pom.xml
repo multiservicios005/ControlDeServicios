@@ -42,12 +42,7 @@
 		    <artifactId>poi-ooxml</artifactId>
 		    <version>4.1.2</version>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.neodatis.odb/neodatis-odb -->
-		<dependency>
-		    <groupId>org.neodatis.odb</groupId>
-		    <artifactId>neodatis-odb</artifactId>
-		    <version>1.9.30.689</version>
-		</dependency>
+
         
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
